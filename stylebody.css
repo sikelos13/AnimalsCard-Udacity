@@ -1,0 +1,200 @@
+.container{
+	display:flex;
+	flex-direction:row;
+	perspective:1000px;
+	justify-content:space-evenly;
+}
+/* entire container, keeps perspective */
+.flip-container:hover .flipper, .flip-container.hover .flipper{
+	transform: rotateY(180deg);
+}
+
+.flip-container2:hover .flipper2, .flip-container.hover .flipper2{
+	transform: rotateY(180deg);
+}
+.flip-container3:hover .flipper3, .flip-container.hover .flipper3{
+	transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back, .front2, .back2, .flip-container2, .front3, .back3, .flip-container3 {
+	width: 320px;
+	height: 480px;
+}
+
+/* flip speed goes here */
+.flipper, .flipper2, .flipper3 {
+	transition: 0.8s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back, .front2, .back2, .back3, .front3 {
+	backface-visibility: hidden;
+	position:absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front, .front2, .front3{
+	z-index: 2;
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back, .back2, .back3 {
+	transform: rotateY(180deg);
+}
+
+.front{
+	background: linear-gradient(#2E8B57, #008080);
+	width:310px;
+	box-shadow: 11px 11px 18px -1px rgba(71,69,71,1);
+	padding:10px;
+	border-radius: 40px;
+	height:400px;
+}
+ .front3{
+	background: linear-gradient(#DC143C, #ADD8E6);
+	width:310px;
+	box-shadow: 11px 11px 18px -1px rgba(71,69,71,1);
+	padding:10px;
+	border-radius: 40px;
+	height:550px;
+}
+img {
+	border: 1px none ;
+	margin-bottom: 10px;
+	height: 200px;
+	width: 300px;
+	background-repeat: no-repeat;
+	padding:5px;
+	border-radius:40px;
+}
+h3 {
+	font-family: 'Berkshire Swash', cursive;
+	text-align:center;
+	font-size: 180%;
+	color:#F5DEB3;
+	margin:10px;
+}
+.text-box{
+	width: 300px;
+	text-align:justify;
+	border: 1px groove;
+	padding:5px;
+	background-color:#F5DEB3;
+	font-family: 'Indie Flower', cursive;
+	border-radius: 20px;
+	color:#2F4F4F;
+	height:105px;;
+}
+ .text-box3{
+	width: 300px;
+	text-align:justify;
+	border: 1px groove;
+	padding:5px;
+	background-color:#F5DEB3;
+	font-family: 'Indie Flower', cursive;
+	border-radius: 20px;
+	color:#2F4F4F;
+	height:245px;;
+}
+.text-box-back{
+	width: 300px;
+	text-align:justify;
+	border: 1px groove;
+	padding:5px;
+	background-color:#F5DEB3;
+	font-family: 'Indie Flower', cursive;
+	border-radius: 20px;
+	color:#2F4F4F;
+	height:310px;;
+}
+.text-box-back3{
+	width: 300px;
+	text-align:justify;
+	border: 1px groove;
+	padding:5px;
+	background-color:#F5DEB3;
+	font-family: 'Indie Flower', cursive;
+	border-radius: 20px;
+	color:#2F4F4F;
+	height:380px;;
+}
+ul {
+	text-align:justify;
+	padding:0;
+	list-style-type: none;
+	font-family: 'Indie Flower', cursive;
+}
+li{
+	color:#008080
+}
+.back{
+	background: linear-gradient(#2E8B57, #008080);
+	width:310px;
+	box-shadow: 11px 11px 18px -1px rgba(71,69,71,1);
+	padding:10px;
+	border-radius: 40px;
+	height:330px;
+}
+.back3{
+	background: linear-gradient(#DC143C, #ADD8E6);
+	width:310px;
+	box-shadow: 11px 11px 18px -1px rgba(71,69,71,1);
+	padding:10px;
+	border-radius: 40px;
+	height:400px;
+}
+body{
+	background:linear-gradient(-90deg,#778899,#87CEFA,#20B2AA);
+}
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 80px;
+    margin: 0.2em;
+	color: #ADFF2F;
+	text-shadow: 0 0 5px #E0FFFF, 0 0 10px #E0FFFF, 0 0 20px #E0FFFF, 0 0 30px #E0FFFF, 0 0 40px #E0FFFF, 0 0 55px #E0FFFF, 0 0 75px #E0FFFF;
+	text-align: center;
+}
+
+.front2{
+	background: linear-gradient(#FF8C00, #4B0082);
+	width:310px;
+	box-shadow: 11px 11px 18px -1px rgba(71,69,71,1);
+	padding:10px;
+	border-radius: 40px;
+	height:480px;
+}
+
+
+.back2{
+	background: linear-gradient(#FF8C00, #4B0082);
+	width:310px;
+	box-shadow: 11px 11px 18px -1px rgba(71,69,71,1);
+	padding:10px;
+	border-radius: 40px;
+	height:310px;
+
+}
+.text-box2{
+	margin:auto;
+	width: 300px;
+	text-align:justify;
+	border: 1px groove;
+	padding:5px;
+	background-color:#F5DEB3;
+	font-family: 'Indie Flower', cursive;
+	border-radius: 20px;
+	color:#2F4F4F;
+	
+}
+#rozecat{
+	font-family: 'Berkshire Swash', cursive;
+	text-align:center;
+	font-size: 180%;
+	color:#F5DEB3;
+	margin:10px;
+}

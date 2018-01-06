@@ -1,0 +1,53 @@
+.dogname {
+	background: linear-gradient(#2E8B57, #008080);
+	border-style:outset;
+	width:310px;
+	box-shadow: 11px 11px 18px -1px rgba(71,69,71,1);
+	padding:10px;
+  border-radius: 40px;
+height:745px;
+}
+
+ul {
+	text-align:justify;
+	padding:0;
+	list-style-type: none;
+  font-family: 'Indie Flower', cursive;
+}
+
+img {
+	border: 1px none ;
+	margin-bottom: 10px;
+	height: 200px;
+  width: 300px;
+  background-repeat: no-repeat;
+  padding:5px;
+  border-radius:40px;
+}
+
+
+h3 {
+  font-family: 'Berkshire Swash', cursive;
+	text-align:center;
+	font-size: 180%;
+	color:#F5DEB3;
+	margin:10px;
+}
+
+.text-box{
+	margin:auto;
+	width: 300px;
+	text-align:justify;
+	border: 1px groove;
+  padding:5px;
+	background-color:#F5DEB3;
+	font-family: 'Indie Flower', cursive;
+  border-radius: 20px;
+	color:#2F4F4F;
+	height:450px;
+}
+
+li{
+	color:#008080
+}
+
